@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/*CORPO INTEIRO FORMATAÇÃO*/
+
+body {
+    color: #fff;
+    font-family: sans-serif;
+    background: #272525;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*CALCULADORA FORMATAÇÃO*/
+
+/*elemento pai*/
+
+#calculator {
+    max-width: 360px;
+    background: #000;
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 15px 0 15px 0 #2e2e2eb0;
+}
+
+/*display da div*/
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgba(119, 236, 197, 0.877);
+    background-color: rgb(63, 63, 63);
+    border: none;
+    box-sizing: border-box;
+}
+
+/*definindo que a borda é nula e como border box arruma "erro" no padding*/ 
+
+
+/*FORMATAÇÃO BOTÕES*/
+
+button {
+    width: calc(25% - 12px);
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    background-color: rgb(63, 63, 63);
+    color: aquamarine;
+    box-shadow: 2px 1px 2px 1px aquamarine;
+}
+
+.operator {
+    color: black;
+    background: aquamarine;
+}
+
+#ac {
+    color: aqua;
+    background: black;
+}
+
+.equal {
+   width: calc(100% - 12px); 
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.9);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
+}
+
+/* Active determina o que acontece no exato momento do click*/
+
+/* EXPLICANDO O CALC DO WIDTH: 
+Esse width define que a largura terá 25% menos 12px da largura do elemento pai.
+EXPLICANDO MARGIN: 
+Primeira a margin superior e espeçamento horizontal.
+O QUE É FLOAT: A propriedade float do CSS determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu containêr. Não permitirá que se comporte como um bloco. Desconsiderando borda.
+*/
+
+
+
